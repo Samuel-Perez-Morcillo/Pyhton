@@ -1,4 +1,7 @@
 # Python course for beginners
+import math
+
+
 course = "Python Programming"
 print(len(course))
 print(course[0])
@@ -29,3 +32,9 @@ print(course.replace("p", "j"))
 print("pro" in course)
 # The difference between this expression and find its that this one return a boolean instead of a index
 print("swift" not in course)
+
+# Working with numbers
+print(round(2.9))
+print(abs(-2.9))
+# (MATH FUNCTION)If we want to find all the functions we can find on Google
+print(math.ceil(2.2))
