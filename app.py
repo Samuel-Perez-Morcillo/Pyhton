@@ -39,11 +39,11 @@ print(abs(-2.9))
 # (MATH FUNCTION)If we want to find all the functions we can find on Google
 print(math.ceil(2.2))
 
-# input function
-x = input("x: ")
-# y = x+1  # with this expression we gonna have a problem because now the variable is identified as a string and we supposed to have it as a number
-y = int(x) + 1
-print(f"x:{x}, y:{y}")
+# # input function
+# x = input("x: ")
+# # y = x+1  # with this expression we gonna have a problem because now the variable is identified as a string and we supposed to have it as a number
+# y = int(x) + 1
+# print(f"x:{x}, y:{y}")
 
 # Conditonal statment
 temperature = 1
@@ -90,3 +90,47 @@ else:
     print("No NO ")
 
 # For Loops
+for number in range(1, 10, 2):
+    print("Attempt", number, number * ".")
+
+succesfull = True
+for number in range(1, 4):
+    if succesfull:
+        print("succesfull")
+        break
+else:
+    print(f"Attempted {number} times  and does not working ")
+
+
+# Nested Loops
+
+for x in range(1, 6):
+    for y in range(1, 4):
+        print(f"{x}, {y}")
+
+# Complex types
+print(type(range(5)))  # Type Range (complex Type)
+
+# While Loops
+number = 100
+while number > 0:
+    print(number)
+    # number = number // 2
+    number //= 2  # cleaner way to write the same
+
+command = ""
+while command.lower() != "quit":
+    command = input(">>")
+    print("Echo", command)
+
+
+# Infinite Loops
+command
+while True:
+    command = input(">")
+    print("Echo", command)
+    if command.lower() == "quit":
+        break
+
+
+# Exercise
