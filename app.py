@@ -38,3 +38,55 @@ print(round(2.9))
 print(abs(-2.9))
 # (MATH FUNCTION)If we want to find all the functions we can find on Google
 print(math.ceil(2.2))
+
+# input function
+x = input("x: ")
+# y = x+1  # with this expression we gonna have a problem because now the variable is identified as a string and we supposed to have it as a number
+y = int(x) + 1
+print(f"x:{x}, y:{y}")
+
+# Conditonal statment
+temperature = 1
+if temperature > 30:
+    print("Its Warm")
+    print("Drink Water")
+elif temperature > 20:
+    print("I think that this weather its nice")
+else:
+    print("It's so Cold")
+
+
+age = 22
+if age >= 18:
+    print("Elegible")
+else:
+    print("Not Elegible")
+
+
+# Better code (Simply)
+age2 = 7
+message = "Elegible" if age2 >= 18 else "Not Elegible"  # Ternary Operator
+
+# Logical Operators
+high_income = True
+good_credit = True
+student = True
+
+if high_income and good_credit:
+    print("Elegible")
+else:
+    print("Not Elegible")
+
+if high_income and good_credit and not student:
+    print("Elegible")
+
+
+# age should be between 18 and 65
+age = 17
+# if age >= 18 and age <= 65: # We can Write this expression Cleaner
+if 18 <= age < 65:
+    print("age it's between parameters")
+else:
+    print("No NO ")
+
+# For Loops
