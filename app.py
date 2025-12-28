@@ -112,25 +112,81 @@ for x in range(1, 6):
 print(type(range(5)))  # Type Range (complex Type)
 
 # While Loops
-number = 100
-while number > 0:
-    print(number)
-    # number = number // 2
-    number //= 2  # cleaner way to write the same
+# number = 100
+# while number > 0:
+#     print(number)
+#     # number = number // 2
+#     number //= 2  # cleaner way to write the same
 
-command = ""
-while command.lower() != "quit":
-    command = input(">>")
-    print("Echo", command)
+# command = ""
+# while command.lower() != "quit":
+#     command = input(">>")
+#     print("Echo", command)
 
 
-# Infinite Loops
-command
-while True:
-    command = input(">")
-    print("Echo", command)
-    if command.lower() == "quit":
-        break
+# # Infinite Loops
+# command
+# while True:
+#     command = input(">")
+#     print("Echo", command)
+#     if command.lower() == "quit":
+#         break
 
 
 # Exercise
+counter = 0
+for number in range(1, 10):
+    if number % 2 == 0:
+        print(number)
+        counter = counter + 1
+
+print(f"We have {counter} even numbers on this range")
+
+
+# Own Functions
+def greet(first_name, last_name):
+    print(f"Hi {first_name} {last_name}")
+    print("Welcome aboard")
+
+
+greet("Samuel", "Perez")
+greet("Rojelio", "Lopez")
+
+# Types of Functions
+# On Programming we have two types of Functions
+# 1-Perform a task
+# 2-Return a Value
+
+
+def get_greeting(name):
+    return f"Hi {name}"
+
+
+message = get_greeting("sam")
+# file = open("content.txt", "w")
+# file.write(message)
+
+
+def increment(number, by):
+    return number + by
+
+
+# result = increment(2, 1)
+# print(result)
+
+# print(increment(2, 1))
+# Keyword Argument
+print(increment(2, by=1))
+
+#####################################
+
+
+def multiply(*numbers):
+    total = 1
+    for number in numbers:
+        # total = total * number
+        total *= number  # cleaner option
+    return total
+
+
+print(multiply(2, 3, 4, 5))
